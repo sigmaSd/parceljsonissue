@@ -1,0 +1,42 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn init
+
+PATH: 
+  /home/mrcool/.cargo/bin:/home/mrcool/.deno/bin:/home/mrcool/.nimble/bin:/home/mrcool/.local/share/nvim/mason/bin:/home/mrcool/.deno/bin:/home/mrcool/.nimble/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/opt/android-ndk:/home/mrcool/.dotnet/tools:/home/mrcool/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/opt/flutter/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/smlnj/bin:/home/mrcool/dev/bin:/opt/android-ndk:/opt/flutter/bin:/usr/lib/smlnj/bin:/home/mrcool/dev/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.4.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/mrcool/dev/node/parcelbug/package.json: Expected double-quoted property name in JSON at position 223
+      at JSON.parse (<anonymous>)
+      at /usr/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "chartjs-example",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+      "dev": "parcel src/index.html",
+      "build": "parcel build src/index.html"
+    },
+    "devDependencies": {
+      "parcel": "^2.8.3"
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
