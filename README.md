@@ -6,4 +6,4 @@ To reproduce the issue
 - yarn dev
 - open the dev page  in the browser and check the logs
 
-The .json() calls fails 
+The .json() call fails 
